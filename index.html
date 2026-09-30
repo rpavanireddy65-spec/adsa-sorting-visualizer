@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ADSA Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>ADSA Sorting Visualizer</h1>
+        <p class="subtitle">
+            Understand sorting algorithms through visualization
+        </p>
+
+        <div class="controls">
+
+            <label>Enter numbers</label>
+
+            <input
+                type="text"
+                id="inputArray"
+                placeholder="Example: 50,20,40,10,30"
+            >
+
+            <button onclick="createArray()">Create Array</button>
+
+            <button onclick="generateRandom()">
+                Random Array
+            </button>
+
+            <label>Select Algorithm</label>
+
+            <select id="algorithm">
+
+                <option value="bubble">
+                    Bubble Sort
+                </option>
+
+                <option value="selection">
+                    Selection Sort
+                </option>
+
+                <option value="insertion">
+                    Insertion Sort
+                </option>
+
+            </select>
+
+            <button class="start" onclick="startSort()">
+                Start Sorting
+            </button>
+
+        </div>
+
+
+        <div class="array-box" id="arrayBox">
+
+            <p>Enter numbers to create an array</p>
+
+        </div>
+
+
+        <div class="information">
+
+            <div class="card">
+
+                <h3>Comparisons</h3>
+
+                <p id="comparisons">0</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Swaps</h3>
+
+                <p id="swaps">0</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Algorithm</h3>
+
+                <p id="algorithmName">-</p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Complexity</h3>
+
+                <p id="complexity">-</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="explanation">
+
+            <h2>How does it work?</h2>
+
+            <p id="explanation">
+
+                Select an algorithm and click Start Sorting.
+                The array will be sorted step-by-step.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

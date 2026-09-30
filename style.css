@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background: #eef3f8;
+    padding: 25px;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+
+h1 {
+    color: #163b65;
+    margin-bottom: 8px;
+}
+
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+.controls {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 12px;
+}
+
+
+input,
+select {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #2868a8;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+button:hover {
+    opacity: 0.85;
+}
+
+
+.start {
+    background: #16824b;
+}
+
+
+.array-box {
+    background: white;
+    min-height: 300px;
+    padding: 25px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    gap: 8px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.1);
+}
+
+
+.bar {
+    width: 45px;
+
+    background: #2868a8;
+
+    color: white;
+
+    border-radius: 6px 6px 0 0;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding-top: 8px;
+
+    font-weight: bold;
+}
+
+
+.information {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+
+.card {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.08);
+}
+
+
+.card h3 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+
+.card p {
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #163b65;
+}
+
+
+.explanation {
+
+    background: white;
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    text-align: left;
+}
+
+
+.explanation h2 {
+
+    color: #163b65;
+
+    margin-bottom: 10px;
+}
+
+
+@media(max-width:700px) {
+
+    body {
+        padding: 10px;
+    }
+
+
+    input,
+    select {
+        width: 100%;
+    }
+
+
+    .information {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .bar {
+        width: 28px;
+    }
+
+}
